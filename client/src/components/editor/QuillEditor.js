@@ -218,11 +218,7 @@ class QuillEditor extends React.Component {
 
     handleChange = (html) => {
         console.log('html', html)
-        // https://youtu.be/BbR-QCoKngE
-        // https://www.youtube.com/embed/ZwKhufmMxko
-        // https://tv.naver.com/v/9176888
-        // renderToStaticMarkup(ReactHtmlParser(html, options));
-
+       
         this.setState({
             editorHtml: html
         }, () => {
@@ -407,7 +403,7 @@ class QuillEditor extends React.Component {
         syntax: true,
         toolbar: {
             container: "#toolbar",
-            //id ="toorbar"는  그 위에 B I U S I V F P 이거 있는 곳이다. 
+          
             handlers: {
                 insertImage: this.imageHandler,
                 insertVideo: this.videoHandler,
